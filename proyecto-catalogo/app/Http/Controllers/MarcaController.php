@@ -13,7 +13,7 @@ class MarcaController extends Controller
      */
     public function index()
     {
-        //
+        return 'A la grande le puse cuca!! jajaja';
     }
 
     /**
