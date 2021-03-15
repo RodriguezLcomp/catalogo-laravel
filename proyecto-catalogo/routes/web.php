@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\MarcaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-use App\Http\Controllers\MarcaController;
-
 Route::get('/adminMarcas', [MarcaController::class, 'index'] );
+
+// use App\Http\Controllers\CategoriaController;
+Route::get('/adminCategorias', [CategoriaController::class, 'index']);
